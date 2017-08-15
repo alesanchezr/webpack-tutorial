@@ -1,8 +1,11 @@
 # Webpack installation
 
-During this small tutorial, will be installing webpack from scratch, you will need a computer with NPM and Node installed.
+During this short tutorial, we will be installing webpack from scratch.
 
-1. Check your version of NPM like this:
+## What do you need?
+You will need a computer with Node and NPM installed.
+
+1. Check your version of NPM:
 
 ```sh
 $ npm -v
@@ -16,14 +19,13 @@ Note: You need at least the 3.5 version of NPM to avoid any performance issues.
 $ npm init -y
 ```
 
-
 3. Install webpack
 
 ```sh
 $ npm install --save-dev webpack
 ```
 
-4. We want to be able to bunble CSS file into our JS bundles, for that we need the Style and CSS loaders.
+4. We want to be able to bunble CSS file into our JS bundles, for that we need both the Style and CSS loaders.
 
 ```sh
 $ npm install --save-dev style-loader css-loader
@@ -35,13 +37,12 @@ $ npm install --save-dev style-loader css-loader
 $ npm install sass-loader node-sass webpack --save-dev
 ```
 
+6. Create a _./src_ directory and a _./public_ directory
 
-6. Create a ./src directory and a ./public directory
+The _src/_ directory will contain your source code: javascript and scss.
+The _public/_ directory will contain your base HTML and images. All other files will be automatically created by webpack.
 
-The src/ directory will contain your source code in javascript and scss.
-The public/ directory will contain your HTML and images by default. Any other file will be automatically created by webpack.
-
-7. Create a webpack.config.js file with the following content:
+7. Create a _webpack.config.js_ file with the following content:
 
 ```
   const path = require('path');
@@ -76,7 +77,7 @@ The public/ directory will contain your HTML and images by default. Any other fi
   };
 ```
 
-8. Create a index.js file insite the ./src folder with the following content:
+8. Create a _index.js_ file inside the _./src_ folder with the following content:
 
 ```
 window.onload=function(){ alert('hello webpack'); }
@@ -90,7 +91,8 @@ $ webpack
 
 10. Make sure that webpack created the bundle, you should see an output like this:
 ```sh
-    alesanchezr:~/workspace (master) $ webpack
+    $ webpack
+    
     Hash: 69f7ef42fb105dfe89e9
     Version: webpack 3.5.4
     Time: 115ms
@@ -99,4 +101,4 @@ $ webpack
        [0] ./src/index.js 50 bytes {0} [built]
 ```
 
-11. If everything went well, create an ./public/index.html file and import the bundle.js script. Run you index.html file and the alert should promt!
+11. If everything went well, create an _./public/index.html_ file and import the _bundle.js_ script. Run you _index.html_ file and the alert should promt!
