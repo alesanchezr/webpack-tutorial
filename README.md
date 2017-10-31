@@ -41,6 +41,6 @@ $ npm install sass-loader node-sass webpack --save-dev
 
 Click on the best option according to your needs.
 
- - [Vanilla JS application](/blob/master/configurations/VANILLAJS.md): A simple Javascript web application.
+ - [Vanilla JS application](/configurations/VANILLAJS.md): A simple Javascript web application.
  - [WordPress](http://github.com): Use Webpack with your WordPress installation
  - [React JS](http://github.com): Install everything you need to start a basic react application.
