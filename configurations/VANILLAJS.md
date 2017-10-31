@@ -1,4 +1,4 @@
-# WARNING! Before beginning with this steps, make sure you have already completed the steps in the README's "master" branch.
+WARNING! Before beginning with this steps, make sure you have already completed the steps in the README's "master" branch.
 
 ## Configuring webpack for Vanilla JS Applications
 
