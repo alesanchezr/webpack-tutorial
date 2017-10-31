@@ -1,12 +1,6 @@
-# Introduction
+# Webpack installation
 
-This repository containas the basic steps (tutorial) to install Webpack for the following environments:
-
-1. Standalone Javascript Application.
-2. WordPress instalation.
-3. React JS instalation (Not ready yet).
-
-All of the configurations include JS, CSS, SASS and Image bundling.
+During this short tutorial, we will be installing webpack from scratch.
 
 ## What do you need?
 You will need a computer with Node and NPM installed.
@@ -42,11 +36,3 @@ $ npm install --save-dev style-loader css-loader
 ```sh
 $ npm install sass-loader node-sass webpack --save-dev
 ```
-
-# Choose your instalation
-
-For the next steps you need to choose what type of aplication you are going to develop:
-
-    - [Vanilla JS Application](http://www.github.com).
-    - [WordPress Application](http://www.github.com).
-    - [React JS Application](http://www.github.com).
