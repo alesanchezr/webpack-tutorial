@@ -66,4 +66,4 @@ $ webpack
        [0] ./src/index.js 50 bytes {0} [built]
 ```
 
-11. If everything went well, create an _./public/index.html_ file and import the _bundle.js_ script. Run you _index.html_ file and the alert should promt!
+11. If everything went well, create an _./public/index.html_ file and import the _bundle.js_ script. Run your _index.html_ file and the alert should promt!
